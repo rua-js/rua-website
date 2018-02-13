@@ -3,6 +3,7 @@
     "react-native": "react-web"
   },
   "extraBabelPlugins": [
-      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }],
+      ["transform-class-properties", { "spec": true }]
   ]
 }
