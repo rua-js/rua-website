@@ -1,5 +1,8 @@
 {
   "alias": {
     "react-native": "react-web"
-  }
+  },
+  "extraBabelPlugins": [
+      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+  ]
 }

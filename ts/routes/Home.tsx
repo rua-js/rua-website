@@ -1,8 +1,7 @@
 import * as React from 'react';
-import { connect } from 'dva';
+import { Menu, Icon } from 'antd'
 import { View, Text } from 'react-native'
 
-@connect()
 class Home extends React.Component {
   static navigationOptions = {
     headerTitle: '',
@@ -11,9 +10,10 @@ class Home extends React.Component {
   render() {
     return (
       <View>
-        <Text>
-          !!
-        </Text>
+        <Menu>
+          <Menu.Item>123</Menu.Item>
+          <Menu.Item>321</Menu.Item>
+        </Menu>
       </View>
     )
   }
