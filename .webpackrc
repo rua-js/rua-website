@@ -5,9 +5,14 @@
   },
   "extraBabelPlugins": [
     "transform-class-properties",
-    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": true }]
   ],
   "extraBabelIncludes": [
     "/node_modules/react-native-web-webview/"
-  ]
+  ],
+  "theme": {
+    "@primary-color": "#f85142",
+    "@menu-item-height": "70px",
+    "@menu-inline-toplevel-item-height": "70px"
+  }
 }
