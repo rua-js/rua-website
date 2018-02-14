@@ -27,15 +27,20 @@ class MasterMenu extends React.Component<Props, never> {
             xl={19}
             xxl={20}
           >
-            <Menu
-              mode={'horizontal'}
+            <View
+              style={styles.rightPart}
             >
-              <Menu.Item>123</Menu.Item>
-              <Menu.Item>321</Menu.Item>
-              <Menu.Item>321</Menu.Item>
-              <Menu.Item>321</Menu.Item>
-              <Menu.Item>321</Menu.Item>
-            </Menu>
+              <View/>
+              <Menu
+                mode={'horizontal'}
+              >
+                <Menu.Item>123</Menu.Item>
+                <Menu.Item>321</Menu.Item>
+                <Menu.Item>321</Menu.Item>
+                <Menu.Item>321</Menu.Item>
+                <Menu.Item>321</Menu.Item>
+              </Menu>
+            </View>
           </Col>
         </Row>
       </View>
@@ -45,6 +50,11 @@ class MasterMenu extends React.Component<Props, never> {
 
 const styles = StyleSheet.create({
   container: {},
+  rightPart: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
 })
 
 interface Props {
