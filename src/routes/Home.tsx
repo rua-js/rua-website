@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from 'react'
 import { Menu, Icon } from 'antd'
 import { View, Text } from 'react-native'
 
@@ -10,10 +10,7 @@ class Home extends React.Component {
   render() {
     return (
       <View>
-        <Menu>
-          <Menu.Item>123</Menu.Item>
-          <Menu.Item>321</Menu.Item>
-        </Menu>
+        <Text>1</Text>
       </View>
     )
   }
