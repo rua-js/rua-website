@@ -3,9 +3,11 @@
   "alias": {
     "react-native": "react-web"
   },
-  "extraBabelPresets": [],
   "extraBabelPlugins": [
-      "transform-class-properties",
-      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+    "transform-class-properties",
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+  ],
+  "extraBabelIncludes": [
+    "/node_modules/react-native-web-webview/"
   ]
 }
