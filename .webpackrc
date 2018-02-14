@@ -1,9 +1,11 @@
 {
+  "entry": "lib/index.js",
   "alias": {
     "react-native": "react-web"
   },
+  "extraBabelPresets": [],
   "extraBabelPlugins": [
-      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }],
-      ["transform-class-properties", { "spec": true }]
+      "transform-class-properties",
+      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
   ]
 }
