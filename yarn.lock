@@ -7422,6 +7422,12 @@ react-lazy-load@^3.0.12:
     lodash.throttle "^4.0.0"
     prop-types "^15.5.8"
 
+react-native-animatable@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.npmjs.org/react-native-animatable/-/react-native-animatable-1.2.4.tgz#b5fb7657e8f6edadbc26697057a327fb920b3039"
+  dependencies:
+    prop-types "^15.5.10"
+
 react-native-i18n@^2.0.12:
   version "2.0.12"
   resolved "https://registry.npmjs.org/react-native-i18n/-/react-native-i18n-2.0.12.tgz#4a503cc73b2fe55e8518f6d4a1340d3b449d8d1a"

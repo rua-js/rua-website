@@ -9,6 +9,7 @@
   ],
   "extraBabelIncludes": [
     "/node_modules/react-native-web-webview/",
+    "/node_modules/react-native-animatable/",
     "/node_modules/react-native-platform-touchable/"
   ],
   "theme": {
