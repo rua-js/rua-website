@@ -4359,6 +4359,10 @@ hyphenate-style-name@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/hyphenate-style-name/-/hyphenate-style-name-1.0.2.tgz#31160a36930adaf1fc04c6074f7eb41465d4ec4b"
 
+i18n-js@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npmjs.org/i18n-js/-/i18n-js-3.0.3.tgz#f537b2bd1e2801eee4f4728a17189ef0991c0270"
+
 iconv-lite@0.4.19, iconv-lite@^0.4.17, iconv-lite@~0.4.13:
   version "0.4.19"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
@@ -7418,6 +7422,12 @@ react-lazy-load@^3.0.12:
     lodash.throttle "^4.0.0"
     prop-types "^15.5.8"
 
+react-native-i18n@^2.0.12:
+  version "2.0.12"
+  resolved "https://registry.npmjs.org/react-native-i18n/-/react-native-i18n-2.0.12.tgz#4a503cc73b2fe55e8518f6d4a1340d3b449d8d1a"
+  dependencies:
+    i18n-js "^3.0.3"
+
 react-native-web-webview@^0.2.5:
   version "0.2.5"
   resolved "https://registry.npmjs.org/react-native-web-webview/-/react-native-web-webview-0.2.5.tgz#c85b4d812647f52f4a237fefd66116ea45b400bc"
@@ -7976,32 +7986,42 @@ rst-selector-parser@^2.2.3:
     lodash.flattendeep "^4.4.0"
     nearley "^2.7.10"
 
-rua-core@^0.2.0, rua-core@^0.2.3:
+rua-core@^0.2.0:
   version "0.2.3"
   resolved "https://registry.npmjs.org/rua-core/-/rua-core-0.2.3.tgz#e455ecb34a34cf752d607ca7ed3635bb2e356b23"
   dependencies:
     global "^4.3.2"
     invariant "^2.2.2"
 
-rua-dva@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.npmjs.org/rua-dva/-/rua-dva-0.4.2.tgz#12317cf0f11325d4359e5ec73ecbebbeb2272201"
+rua-core@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.npmjs.org/rua-core/-/rua-core-0.2.4.tgz#0417ce0fbc70676bed6bf48843b8c4116d78548c"
   dependencies:
+    global "^4.3.2"
+    invariant "^2.2.2"
+
+rua-dva@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.npmjs.org/rua-dva/-/rua-dva-0.6.0.tgz#fd4aaaefc576e0b6674387bcd11047046ac5cbf0"
+  dependencies:
+    dva "^2.1.0"
     dva-core "*"
     global "^4.3.2"
     invariant "^2.2.2"
     rua-core "^0.2.0"
 
-rua@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/rua/-/rua-0.2.0.tgz#5fb746f3d7a9c791048c6376d104846678fdf546"
+rua@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.npmjs.org/rua/-/rua-0.3.5.tgz#4f9dda591858b43d7fb66123c92c4fbede44cc9e"
   dependencies:
+    i18n-js "^3.0.3"
     invariant "^2.2.2"
     isomorphic-fetch "^2.2.1"
     localforage "^1.5.6"
     lodash "^4.17.5"
-    rua-core "^0.2.3"
-    rua-dva "^0.4.2"
+    react-native-i18n "^2.0.12"
+    rua-core "^0.2.4"
+    rua-dva "^0.6.0"
     wolfy87-eventemitter "^5.2.4"
 
 run-async@^2.2.0:
