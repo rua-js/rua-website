@@ -8014,9 +8014,9 @@ rua-dva@^0.6.0:
     invariant "^2.2.2"
     rua-core "^0.2.0"
 
-rua-ui@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/rua-ui/-/rua-ui-0.0.2.tgz#b617c0f854ee66211685f4025408a57f1c8ad987"
+rua-ui@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/rua-ui/-/rua-ui-0.0.8.tgz#f86e65eb428d3444757e6280980fd07d3e7d86cb"
   dependencies:
     react-native-platform-touchable "^1.1.1"
     rua-core "^0.2.0"

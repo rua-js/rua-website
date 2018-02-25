@@ -8,7 +8,8 @@
     ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": true }]
   ],
   "extraBabelIncludes": [
-    "/node_modules/react-native-web-webview/"
+    "/node_modules/react-native-web-webview/",
+    "/node_modules/react-native-platform-touchable/"
   ],
   "theme": {
     "@primary-color": "#f85142",
