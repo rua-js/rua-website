@@ -694,7 +694,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@^16.0.38":
   version "16.0.38"
   resolved "https://registry.npmjs.org/@types/react/-/react-16.0.38.tgz#76617433ea10274505f60bb86eddfdd0476ffdc2"
 
@@ -7428,6 +7428,10 @@ react-native-i18n@^2.0.12:
   dependencies:
     i18n-js "^3.0.3"
 
+react-native-platform-touchable@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/react-native-platform-touchable/-/react-native-platform-touchable-1.1.1.tgz#fde4acc65eea585d28b164d0c3716a42129a68e4"
+
 react-native-web-webview@^0.2.5:
   version "0.2.5"
   resolved "https://registry.npmjs.org/react-native-web-webview/-/react-native-web-webview-0.2.5.tgz#c85b4d812647f52f4a237fefd66116ea45b400bc"
@@ -8009,6 +8013,14 @@ rua-dva@^0.6.0:
     global "^4.3.2"
     invariant "^2.2.2"
     rua-core "^0.2.0"
+
+rua-ui@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/rua-ui/-/rua-ui-0.0.2.tgz#b617c0f854ee66211685f4025408a57f1c8ad987"
+  dependencies:
+    react-native-platform-touchable "^1.1.1"
+    rua-core "^0.2.0"
+    wolfy87-eventemitter "^5.2.4"
 
 rua@^0.3.5:
   version "0.3.5"

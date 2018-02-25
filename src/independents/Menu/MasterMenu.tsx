@@ -18,7 +18,7 @@ class MasterMenu extends React.Component<Props, never> {
             xxl={4}
           >
             <View style={styles.logo}>
-              <Text>Rua</Text>
+              <Text>Rua.js</Text>
             </View>
           </Col>
           <Col

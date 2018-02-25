@@ -1,17 +1,20 @@
 import * as React from 'react'
-import { Menu, Icon } from 'antd'
-import { View, Text } from 'react-native'
+import { Text } from 'react-native'
+import { EmptyLayout } from '../layouts/index'
 
-class Home extends React.Component {
+class Home extends React.Component
+{
   static navigationOptions = {
     headerTitle: '',
   }
 
-  render() {
+  render()
+  {
+
     return (
-      <View>
+      <EmptyLayout>
         <Text>1</Text>
-      </View>
+      </EmptyLayout>
     )
   }
 }
