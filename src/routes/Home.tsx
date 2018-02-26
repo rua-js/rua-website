@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Image } from 'react-native'
+import { Image, View as RNView } from 'react-native'
 import { MarginedView, PaddedView, Text, View } from 'rua-ui'
 import * as Animatable from 'react-native-animatable'
 import { EmptyLayout } from '../layouts/index'
@@ -8,7 +8,10 @@ class Home extends React.Component<any, any>
 {
   renderTitle = () => {
     return (
-      <MarginedView xy={30}>
+      <View
+        justify={'center'}
+        margin={30}
+      >
         <Animatable.View
           animation="fadeIn"
           delay={100}
@@ -22,15 +25,16 @@ class Home extends React.Component<any, any>
             Less is more
           </Text>
         </Animatable.View>
-      </MarginedView>
+      </View>
     )
   }
 
   renderSubTitle = () => {
     return (
-      <MarginedView
-        top={10}
-        bottom={60}
+      <View
+        justify={'center'}
+        marginTop={10}
+        marginBottom={60}
       >
         <Animatable.View
           animation="fadeIn"
@@ -46,7 +50,7 @@ class Home extends React.Component<any, any>
             The All-Platform Unified React Library For Web Artisans
           </Text>
         </Animatable.View>
-      </MarginedView>
+      </View>
     )
   }
 
@@ -75,16 +79,18 @@ class Home extends React.Component<any, any>
   renderDivider = () => {
     return (
       <View
+        align={'center'}
       >
         <View
           flex={1}
           justify={'center'}
-        >
-          <Text>123</Text>
-        </View>
+          style={{
+            borderBottomWidth: 1,
+            borderBottomColor: '#ddd',
+          }}
+        />
         <View
-          // flex={1}
-          // width={100}
+          paddingX={16}
           justify={'center'}
         >
           <Text>123</Text>
@@ -92,9 +98,11 @@ class Home extends React.Component<any, any>
         <View
           flex={1}
           justify={'center'}
-        >
-          <Text>123</Text>
-        </View>
+          style={{
+            borderBottomWidth: 1,
+            borderBottomColor: '#ddd',
+          }}
+        />
       </View>
     )
   }
@@ -104,12 +112,15 @@ class Home extends React.Component<any, any>
     return (
       <EmptyLayout>
         {/* Hero Container */}
-        <PaddedView y={60}>
+        <View
+          direction={'column'}
+          paddingY={60}
+        >
           {this.renderTitle()}
           {this.renderSubTitle()}
           {this.renderMainImage()}
           {this.renderDivider()}
-        </PaddedView>
+        </View>
       </EmptyLayout>
     )
   }
