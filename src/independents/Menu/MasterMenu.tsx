@@ -1,13 +1,36 @@
 import * as React from 'react'
-import { Menu, Icon, Row, Col } from 'antd'
-import { StyleSheet, View, Image, Button, Text } from 'react-native'
-// import { actions } from 'rua'
-// import { default as R } from '../../rua'
+import { Col, Menu, Row } from 'antd'
+import { StyleSheet } from 'react-native'
+import { View, Text } from 'rua-ui'
 
-class MasterMenu extends React.Component<Props, never> {
-  render() {
+class MasterMenu extends React.Component<Props, never>
+{
+
+  handleMenuClick = ({ key }) =>
+  {
+    switch (key)
+    {
+      case 'github.rua': {
+        return window.open('https://github.com/rua-js/rua')
+      }
+
+      case 'github.rua-ui': {
+        return window.open('https://github.com/rua-js/rua-ui')
+      }
+
+      default: {
+        window.location.href = `#${key}`
+      }
+    }
+  }
+
+  render()
+  {
     return (
-      <View style={styles.container}>
+      <View
+        style={styles.container}
+        direction={'column'}
+      >
         <Row>
           <Col
             xs={24}
@@ -17,7 +40,11 @@ class MasterMenu extends React.Component<Props, never> {
             xl={5}
             xxl={4}
           >
-            <View style={styles.logo}>
+            <View
+              style={styles.logo}
+              direction={'column'}
+              onPress={() => window.location.href = `#/`}
+            >
               <Text>Rua.js</Text>
             </View>
           </Col>
@@ -31,15 +58,21 @@ class MasterMenu extends React.Component<Props, never> {
           >
             <View
               style={styles.rightPart}
+              direction={'column'}
             >
               <View />
               <Menu
                 mode={'horizontal'}
+                onClick={this.handleMenuClick}
               >
-                <Menu.Item>Document</Menu.Item>
-                <Menu.Item>Design</Menu.Item>
-                <Menu.Item>UI</Menu.Item>
-                <Menu.Item>Github</Menu.Item>
+                <Menu.Item key={'/doc/intro'}>Document</Menu.Item>
+                <Menu.Item key={'/design/intro'}>Design</Menu.Item>
+                <Menu.Item key={'/ui/intro'}>UI</Menu.Item>
+                <Menu.SubMenu title="Github">
+                  <Menu.Item key={'github.rua'}>Rua.js</Menu.Item>
+                  <Menu.Divider />
+                  <Menu.Item key={'github.rua-ui'}>Rua UI</Menu.Item>
+                </Menu.SubMenu>
               </Menu>
             </View>
           </Col>
@@ -74,7 +107,8 @@ const styles = StyleSheet.create({
   },
 })
 
-interface Props {
+interface Props
+{
 
 }
 
