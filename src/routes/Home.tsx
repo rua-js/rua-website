@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Image, View as RNView } from 'react-native'
-import { MarginedView, PaddedView, Text, View } from 'rua-ui'
+import { MarginedView, PaddedView, Text, View, Container } from 'rua-ui'
 import * as Animatable from 'react-native-animatable'
 import { EmptyLayout } from '../layouts/index'
 
@@ -80,6 +80,7 @@ class Home extends React.Component<any, any>
     return (
       <View
         align={'center'}
+        paddingY={60}
       >
         <View
           flex={1}
@@ -93,7 +94,9 @@ class Home extends React.Component<any, any>
           paddingX={16}
           justify={'center'}
         >
-          <Text>123</Text>
+          <Text
+            color={'red'}
+          >Six Design Principal</Text>
         </View>
         <View
           flex={1}
@@ -112,15 +115,18 @@ class Home extends React.Component<any, any>
     return (
       <EmptyLayout>
         {/* Hero Container */}
-        <View
-          direction={'column'}
-          paddingY={60}
-        >
-          {this.renderTitle()}
-          {this.renderSubTitle()}
-          {this.renderMainImage()}
-          {this.renderDivider()}
-        </View>
+        <Container>
+          <View
+            direction={'column'}
+            paddingY={60}
+          >
+            {this.renderTitle()}
+            {this.renderSubTitle()}
+            {this.renderMainImage()}
+            {this.renderDivider()}
+          </View>
+        </Container>
+        {/*  */}
       </EmptyLayout>
     )
   }
