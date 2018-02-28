@@ -8028,9 +8028,9 @@ rua-ui@^0.0.30:
     rua-core "^0.2.0"
     wolfy87-eventemitter "^5.2.4"
 
-rua@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.npmjs.org/rua/-/rua-0.3.5.tgz#4f9dda591858b43d7fb66123c92c4fbede44cc9e"
+rua@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.npmjs.org/rua/-/rua-0.3.6.tgz#158ff13052895fbea43df1377f5c33b6cb62c1f4"
   dependencies:
     i18n-js "^3.0.3"
     invariant "^2.2.2"
