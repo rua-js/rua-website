@@ -32,23 +32,23 @@ class UIIntro extends React.Component
             >
               <Menu.Item>Introduction</Menu.Item>
               <Menu.Divider />
-              <Menu.SubMenu key={'primitives'} title={'Components'}>
+              <Menu.SubMenu title={'Components'}>
                 <Menu.ItemGroup title={'Primitives'}>
-                  <Menu.Item key={'view'}>View</Menu.Item>
-                  <Menu.Item key={'text'}>Text</Menu.Item>
-                  <Menu.Item key={'touchableView'}>TouchableView</Menu.Item>
+                  <Menu.Item key={'View'}>View</Menu.Item>
+                  <Menu.Item key={'Text'}>Text</Menu.Item>
+                  <Menu.Item key={'TouchableView'}>TouchableView</Menu.Item>
                 </Menu.ItemGroup>
-                <Menu.ItemGroup key={'elements'} title={'Elements'}>
-                  <Menu.Item>Container</Menu.Item>
+                <Menu.ItemGroup title={'Elements'}>
+                  <Menu.Item key={'Container'}>Container</Menu.Item>
                 </Menu.ItemGroup>
-                <Menu.ItemGroup key={'collections'} title={'Collections'}>
+                <Menu.ItemGroup title={'Collections'}>
                   <Menu.Item>1</Menu.Item>
                   <Menu.Item>2</Menu.Item>
                 </Menu.ItemGroup>
-                <Menu.ItemGroup key={'placeholder'} title={'Placeholder'}>
-                  <Menu.Item>Placeholder</Menu.Item>
-                  <Menu.Item>SquarePlaceholder</Menu.Item>
-                  <Menu.Item>FluidPlaceholder</Menu.Item>
+                <Menu.ItemGroup title={'Placeholder'}>
+                  <Menu.Item key={'Placeholder'}>Placeholder</Menu.Item>
+                  <Menu.Item key={'SquarePlaceholder'}>SquarePlaceholder</Menu.Item>
+                  <Menu.Item key={'FluidPlaceholder'}>FluidPlaceholder</Menu.Item>
                 </Menu.ItemGroup>
                 <Menu.ItemGroup key={'view'} title={'Views'}>
                   <Menu.Item>1</Menu.Item>
