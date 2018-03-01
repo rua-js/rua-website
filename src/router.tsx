@@ -1,6 +1,7 @@
 import * as React from 'react'
-import { Router, Route, Switch } from 'dva/router'
+import { Route, Router, Switch } from 'dva/router'
 import dynamic from 'dva/dynamic'
+
 import { MasterMenu } from './independents/Menu/index'
 
 const routes = [
@@ -8,11 +9,17 @@ const routes = [
     path: '/',
     exact: true,
     component: () => import('./routes/Home')
-  }
+  },
+  {
+    path: '/ui/intro',
+    exact: true,
+    component: () => import('./routes/UI/UIIntro')
+  },
 ]
 
 // @ts-ignore
-const RouterConfig = ({ history, app, ...props }) => {
+const RouterConfig = ({ history, app, ...props }) =>
+{
   return (
     <Router history={history}>
       <div>

@@ -10,11 +10,13 @@
   "extraBabelIncludes": [
     "/node_modules/react-native-web-webview/",
     "/node_modules/react-native-animatable/",
-    "/node_modules/react-native-platform-touchable/"
+    "/node_modules/react-native-platform-touchable/",
+    "/node_modules/rua-ui",
+    "/node_modules/rua"
   ],
   "theme": {
     "@primary-color": "#f85142",
-    "@menu-item-height": "70px",
-    "@menu-inline-toplevel-item-height": "70px"
+    "@menu-item-height": "30px",
+    "@menu-inline-toplevel-item-height": "30px"
   }
 }
