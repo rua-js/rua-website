@@ -8020,17 +8020,17 @@ rua-dva@^0.6.0:
     invariant "^2.2.2"
     rua-core "^0.2.0"
 
-rua-ui@^0.1.1-alpha.1:
-  version "0.1.1-alpha.1"
-  resolved "https://registry.npmjs.org/rua-ui/-/rua-ui-0.1.1-alpha.1.tgz#7862c8358e75fb5aaee9e5e775c5a9d52b1e6aaf"
+rua-ui@^0.1.1-alpha.1-fix:
+  version "0.1.1-alpha.1-fix"
+  resolved "https://registry.npmjs.org/rua-ui/-/rua-ui-0.1.1-alpha.1-fix.tgz#d3a0e5e95a0c38db4ba0acf3577c194a05bf38ae"
   dependencies:
     react-native-platform-touchable "^1.1.1"
     rua-core "^0.2.0"
     wolfy87-eventemitter "^5.2.4"
 
-rua@^0.4.0-alpha.6-fix:
-  version "0.4.0-alpha.6-fix"
-  resolved "https://registry.npmjs.org/rua/-/rua-0.4.0-alpha.6-fix.tgz#39fbfdfeb2618fff335001e3b4e77c97a2e89124"
+rua@^0.4.0-alpha.6-fix2:
+  version "0.4.0-alpha.6-fix2"
+  resolved "https://registry.npmjs.org/rua/-/rua-0.4.0-alpha.6-fix2.tgz#eaaa6b921a7beef67bb6d631b9bd091854712b75"
   dependencies:
     global "^4.3.2"
     i18n-js "^3.0.3"
