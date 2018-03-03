@@ -3,12 +3,10 @@ import { Col, Menu, Row } from 'antd'
 import { StyleSheet } from 'react-native'
 import { View } from 'rua-ui'
 
+import { UILayouts } from '../../layouts'
+
 class UIIntro extends React.Component
 {
-  static navigationOptions = {
-    headerTitle: '',
-  }
-
   render()
   {
     return (
@@ -28,18 +26,24 @@ class UIIntro extends React.Component
           >
             <Menu
               mode={'inline'}
-              defaultOpenKeys={['primitives', 'elements', 'collections', 'placeholder', 'view', 'modules']}
+              defaultOpenKeys={['Components']}
             >
               <Menu.Item>Introduction</Menu.Item>
               <Menu.Divider />
-              <Menu.SubMenu title={'Components'}>
+              <Menu.SubMenu key={'Components'} title={'Components'}>
                 <Menu.ItemGroup title={'Primitives'}>
                   <Menu.Item key={'View'}>View</Menu.Item>
                   <Menu.Item key={'Text'}>Text</Menu.Item>
                   <Menu.Item key={'TouchableView'}>TouchableView</Menu.Item>
                 </Menu.ItemGroup>
                 <Menu.ItemGroup title={'Elements'}>
+                  <Menu.Item key={'Button'}>Button</Menu.Item>
                   <Menu.Item key={'Container'}>Container</Menu.Item>
+                  <Menu.Item key={'Divider'}>Divider</Menu.Item>
+                  <Menu.Item key={'Flag'}>Flag</Menu.Item>
+                  <Menu.Item key={'Header'}>Header</Menu.Item>
+                  <Menu.Item key={'Icon'}>Icon</Menu.Item>
+                  <Menu.Item key={'Image'}>Image</Menu.Item>
                 </Menu.ItemGroup>
                 <Menu.ItemGroup title={'Collections'}>
                   <Menu.Item>1</Menu.Item>
